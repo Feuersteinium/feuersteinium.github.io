@@ -5,13 +5,12 @@
 
 
 # feuerstein.dev
-This is the source code of my website, build with [Astro](https://astro.build). The site is currently under heavy development and a placeholder is running instead of the website.
-The Code in this Repo is currently just some testing as i am still learning astro.
+This is the source code of my website, build with [Astro](https://astro.build).
 
-The documentation section of my site can be found [here](https://github.com/feuersteinium/docs)
+If you found any typos or bugs you are free to open a Issue/Pull request. If you don't know how to do this or don't have the time for this, contact me.
 
 ## License
-All **content** on the website, including text, images, and other media, is licensed under the **CC BY-SA License**. All **Source Code** of the Website is Licensed under the **MIT License**.
+All **content** on the website, including text, images, and other media, is licensed under the **CC BY-SA License**. All **Source Code** of the website is licensed under the **MIT License**.
 
 Fonts used:
       [LilitaOne](https://fonts.google.com/specimen/Lilita+One)
