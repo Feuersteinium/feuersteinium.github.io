@@ -73,7 +73,7 @@ jobs:
           with:
             ref: beta
         - name: Remove old Website from Cache
-          run: ls -l
+          run: rm -rf *
 
       #  - name: Restore Website from Cache
       #    uses: actions/cache/restore@v3
