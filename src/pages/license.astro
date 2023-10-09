@@ -2,6 +2,7 @@
 import '../styles/global.css'
 import Footer from '../components/footer.astro'
 import Header from '../components/header.astro'
+import Umami from '../components/umami.astro'
 const pageTitle = "License"
 ---
 
@@ -13,6 +14,7 @@ const pageTitle = "License"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+		<Umami />
 	</head>
 	<body>
         <Header />

@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'
 const pageTitle = "404 Page not Found"
+import Umami from '../components/umami.astro'
 ---
 
 
@@ -11,6 +12,7 @@ const pageTitle = "404 Page not Found"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+		<Umami />
 	</head>
 	<body>
 		<h1>{pageTitle}</h1>
