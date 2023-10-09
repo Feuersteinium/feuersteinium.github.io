@@ -6,22 +6,6 @@ on:
       - master
 jobs:
 
-# Testing the site configuration with astro check >> https://docs.astro.build/de/reference/cli-reference/#astro-check
-
-    website-check:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout Branch
-          uses: actions/checkout@v3
-        - name: Setup Node.js
-          uses: actions/setup-node@v3
-          with:
-            node-version: '19'
-            cache: 'npm'
-        - name: Installing Astro
-          run: npm install astro
-        - name: Testing Website
-          run: npm run astro check
 
 # Build the website and cache it >> https://docs.astro.build/de/reference/cli-reference/#astro-build
 
@@ -38,6 +22,8 @@ jobs:
             cache: 'npm'
         - name: Installing Astro
           run: npm install astro
+        - name: Testing Website
+          run: npm run astro check
         - name: Building Website
           run: npm run build
         - name: Get Date
@@ -79,6 +65,31 @@ jobs:
             git commit -m "Automated Build"
             git push
 
-
+    beta-deploy:
+      runs-on: ubuntu-latest
+      needs: website-build
+      steps:
+        - name: Checkout Deploy
+          uses: actions/checkout@v3
+          with:
+            ref: beta
+        - name: Remove old Website from Cache
+          run: rm -rf .
+        - name: Restore Website from Cache
+          uses: actions/cache/restore@v3
+          env:
+             cache-name: website-build
+          with:
+             path: build.tar.gz
+             key: build-cache-${{steps.get-date.outputs.date}}
+        - name: Unpack tarball
+          run: tar -xf build.tar.gz 
+        - name: Push to Deploy Branch
+          run: |
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git add .
+            git commit -m "Automated Build"
+            git push
 
           
