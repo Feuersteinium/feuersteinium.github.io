@@ -73,22 +73,23 @@ jobs:
           with:
             ref: beta
         - name: Remove old Website from Cache
-          run: rm -rf .
-        - name: Restore Website from Cache
-          uses: actions/cache/restore@v3
-          env:
-             cache-name: website-build
-          with:
-             path: build.tar.gz
-             key: build-cache-${{steps.get-date.outputs.date}}
-        - name: Unpack tarball
-          run: tar -xf build.tar.gz 
-        - name: Push to Deploy Branch
-          run: |
-            git config user.name github-actions
-            git config user.email github-actions@github.com
-            git add .
-            git commit -m "Automated Build"
-            git push
+          run: ls -l
+
+      #  - name: Restore Website from Cache
+      #    uses: actions/cache/restore@v3
+      #    env:
+      #       cache-name: website-build
+      #    with:
+      #       path: build.tar.gz
+      #       key: build-cache-${{steps.get-date.outputs.date}}
+      #  - name: Unpack tarball
+      #    run: tar -xf build.tar.gz 
+      #  - name: Push to Deploy Branch
+      #    run: |
+      #      git config user.name github-actions
+      #      git config user.email github-actions@github.com
+      #      git add .
+      #      git commit -m "Automated Build"
+      #      git push
 
           
