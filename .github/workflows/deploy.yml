@@ -38,32 +38,6 @@ jobs:
           with:
             path: build.tar.gz
             key: build-cache-${{steps.get-date.outputs.date}}
-       
-    build-push:
-      runs-on: ubuntu-latest
-      needs: website-build
-      steps:
-        - name: Checkout Deploy
-          uses: actions/checkout@v3
-          with:
-            ref: deploy
-        - name: Remove old Website from Cache
-          run: rm -rf build.tar.gz
-        - name: Restore Website from Cache
-          uses: actions/cache/restore@v3
-          env:
-             cache-name: website-build
-          with:
-             path: build.tar.gz
-             key: build-cache-${{steps.get-date.outputs.date}}
-        - name: Push to Deploy Branch
-          run: |
-            git config user.name github-actions
-            git config user.email github-actions@github.com
-            git add .
-            git commit -m "Automated Build"
-            git push
-
     beta-deploy:
       runs-on: ubuntu-latest
       needs: website-build
@@ -83,8 +57,6 @@ jobs:
              key: build-cache-${{steps.get-date.outputs.date}}
         - name: Unpack tarball
           run: tar -xf build.tar.gz 
-        - name: Rename folder
-          run: mv dist docs
         - name: Push to Deploy Branch
           run: |
             git config user.name github-actions
@@ -92,5 +64,11 @@ jobs:
             git add .
             git commit -m "Automated Build"
             git push
+        - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./dist
+      
 
           
