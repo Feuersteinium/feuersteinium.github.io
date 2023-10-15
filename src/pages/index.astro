@@ -4,6 +4,7 @@ import '../styles/global.css'
 import Footer from '../components/footer.astro'
 import Header from '../components/header.astro'
 import '../styles/index.css'
+import Umami from '../components/umami.astro'
 ---
 
 <html lang="en">
@@ -15,7 +16,7 @@ import '../styles/index.css'
 		<meta name="description" content="Website of Niklas Feuerstein">
  		<meta name="keywords" content="Niklas Feuerstein, feuerstein.dev, Niklas, Feuerstein">
 		<title>{pageTitle}</title>
-		<script async src="https://analytics.eu.umami.is/script.js" data-website-id="22969fd3-9bd0-4da1-896e-11aff73adbd8"></script>
+		<Umami />
 	</head>
 	<body>
 		<Header />
