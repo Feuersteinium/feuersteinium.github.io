@@ -4,10 +4,16 @@ import '../styles/global.css'
 import '../styles/blog.css'
 import Header from '../components/header.astro'
 import Footer from '../components/footer.astro'
+import Umami from '../components/umami.astro'
 ---
-<Header />
-<h2>{frontmatter.title}</h2>
-<p>Written by {frontmatter.author}</p>
-<p>Published on {frontmatter.date}</p>
-<slot />
-<Footer />
+<head>
+    <Umami />
+</head>
+<body>
+    <Header />
+    <h2>{frontmatter.title}</h2>
+    <p>Written by {frontmatter.author}</p>
+    <p>Published on {frontmatter.date}</p>
+    <slot />
+    <Footer />
+</body>
