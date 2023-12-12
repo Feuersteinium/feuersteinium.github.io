@@ -75,3 +75,25 @@ body {
     padding: 0;
 }
 
+
+
+.darkblue {
+    background-color: #9590a8;
+    padding: 1rem 0 2.5rem 0;
+}
+
+.darkblue * {
+    text-align: center;
+}
+
+.box {
+    border-radius: 5rem;
+    border: 0.75rem solid #3C6E71;
+    display: inline-block;
+    background-color: #3C6E71;
+}
+
+
+
+
+/* #29274c */
