@@ -6,19 +6,6 @@
     src: url(/fonts/lilitaone-regular.ttf);
     font-weight: 900;
   }
-
-@font-face {
-    font-family: cascadia;
-    src: url(/fonts/cascadiacode.ttf);
-  }
-
-
-@font-face {
-    font-family: anton;
-    src: url(/fonts/anton-regular.ttf);
-    font-weight: 900;
-  }
-
  
 @font-face {
     font-family: martian;
@@ -28,10 +15,12 @@
 
 
 
+
+
 /* Standard Heading*/
 h1, h2, h3, h4, h5, h6 {
     color: #272626;
-    font-family: 'anton';
+    font-family: 'lilita';
 }
 
 
@@ -66,7 +55,7 @@ h6 {
 
 
 p {
-    font-family: cascadia;
+    font-family: martian;
 }
 
 
