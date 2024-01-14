@@ -20,9 +20,11 @@ There are two versions of my page - The nightly and the stable page. The nightly
 All **content** on the website, including text, images, and other media, is licensed under the **CC BY-SA License**. All **Source Code** of the website is licensed under the **MIT License**.
 
 Fonts used:
-      [LilitaOne](https://fonts.google.com/specimen/Lilita+One)
-    - [Anton Regular](https://fonts.google.com/specimen/Anton)
-    - [Cascadia Code](https://github.com/microsoft/cascadia-code)
+     - Martian Mono (https://fonts.google.com/specimen/Martian+Mono)
+     - Raleway (https://fonts.google.com/specimen/Raleway)
+     - Spacegrotesk (https://fonts.google.com/specimen/Space+Grotesk)
+     - Nohemi (https://rajputrajesh-448.gumroad.com/l/NOHEMI9)
+     - Inter (https://fonts.google.com/specimen/Inter)
 
 Color Palette:
   - Cyan [#3C6E71]

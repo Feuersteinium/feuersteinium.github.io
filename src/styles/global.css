@@ -1,26 +1,47 @@
+:root {
+    --color-text-main: #1C2321;
+    --color-text-faded:#FCAA67;
+    --color-component: #ffe9f5;
+    --color-components: #C84192;    
+    --color-component2: #9E2E71;
+}
+
+
 
 /*Fontconfig*/
 
-@font-face {
-    font-family: lilita;
-    src: url(/fonts/lilitaone-regular.ttf);
-    font-weight: 900;
-  }
  
 @font-face {
     font-family: martian;
     src: url(/fonts/martianmono.ttf);
   }
 
+@font-face {
+    font-family: raleway;
+    src: url(/fonts/raleway.ttf);
+}
 
+@font-face {
+    font-family: spacegrotesk;
+    src: url(/fonts/spacegrotesk.ttf);
+    font-weight: 900;
+}
 
+@font-face {
+    font-family: nohemi;
+    src: url(/fonts/nohemi.ttf);
+    font-weight: 900;
+}
 
-
+@font-face {
+    font-family: inter;
+    src: url(/fonts/inter.ttf);
+}
 
 /* Standard Heading*/
 h1, h2, h3, h4, h5, h6 {
     color: #272626;
-    font-family: 'lilita';
+    font-family: 'nohemi';
 }
 
 
@@ -83,6 +104,40 @@ body {
 }
 
 
+#blogarticles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
 
 
-/* #29274c */
+.blogarticle {
+    width: 20vw;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 1.5rem;
+    border-color: var(--color-component);
+    background-color: var(--color-component);
+}
+
+.blogarticle p,a {
+    color: green;
+    text-decoration: none;
+}
+
+.blog-date {
+    font-style: italic;
+    color: #9590a8;
+    text-align: end;
+    padding: 1rem;
+}
+
+
+code {
+    font-family: martian;
+    background-color: var(--color-text-main);
+    color: var(--color-component);
+    border: 1rem solid var(--color-text-main);
+    border-radius: 1rem;
+}

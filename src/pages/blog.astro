@@ -3,6 +3,7 @@ const pageTitle = "Blog"
 import '../styles/global.css'
 import Header from '../components/header.astro'
 import Umami from '../components/umami.astro'
+const allPosts = await Astro.glob('../pages/blog/*.md');
 ---
 
 <html lang="en">
@@ -17,8 +18,8 @@ import Umami from '../components/umami.astro'
 	<body>
 		<Header />
 		<h1>{pageTitle}</h1>
-        <ul>
-            <li><a href="/blog/post-1">Post1</a></li>
-        </ul>
+        <div id="blogarticles">
+			{allPosts.map((post) => <div class="blogarticle"><a href={post.url}><img src={post.frontmatter.image.url}><p>{post.frontmatter.title}</p><p class="blog-date">{post.frontmatter.pubDate}</p></a></div>)}
+        </div>
 	</body>
 </html>
