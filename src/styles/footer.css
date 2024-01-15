@@ -1,48 +1,42 @@
-.footer-h {
-    text-decoration: none;
-    font-family: lilita;
-    font-size: 1.25rem;
-    color: #272626;
-}
-
-.element {
-    text-decoration: none;
-    font-family: martian;
-    font-size: 1em;
-    color: #272626;
-    font-weight: bold;
-}
-
-
-
-.container {
+#footer-layer-1 {
     display: flex;
-    align-items: top;
-    width: 100%;
-    height: 200px;
-    background-color: #3C6E71;
-    position: fixed;
-    bottom: 0;
-}
-
-
-#fone {
-    flex-grow: 2;
-}
-
-#ftwo {
-}
-
-
-#fthree {
-    flex-grow: 0.5;
-}
-
-#ffour {
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
     
 }
 
-#ffive {
-    flex-grow: 2;
+#footer-layer-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 2rem;
+}
+
+.footer * {
+    color: var(--color-text-main);
+    font-family: raleway;
+}
+
+.footer svg {
+    height: 2.5rem;
+}
+
+.footer {
+    background-color: var(--color-text-faded);
+}
+
+#footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10rem
+}
+
+
+.footer a:hover {
+    
 }
 

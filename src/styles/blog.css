@@ -3,3 +3,33 @@ img {
 }
 
 
+
+#blogarticles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.blogarticle {
+    width: 20vw;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 1.5rem;
+    border-color: var(--color-component);
+    background-color: var(--color-component);
+}
+
+.blogarticle p,.blogarticle a {
+    color: green;
+    text-decoration: none;
+}
+
+.blog-date {
+    font-style: italic;
+    color: #9590a8;
+    text-align: end;
+    padding: 1rem;
+}
+
