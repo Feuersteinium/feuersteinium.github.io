@@ -28,12 +28,6 @@
 }
 
 @font-face {
-    font-family: nohemi;
-    src: url(/fonts/nohemi.ttf);
-    font-weight: 900;
-}
-
-@font-face {
     font-family: inter;
     src: url(/fonts/inter.ttf);
 }
