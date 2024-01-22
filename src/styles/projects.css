@@ -1,0 +1,42 @@
+
+/* The parent container for the project boxes*/
+#project-collection {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Project boxes itself*/
+
+#projects-mastodonde {
+    background-image: url();
+    background-repeat: round;
+}
+
+#projects-partei {
+    background-image: url();
+    background-repeat: round;
+}
+
+#projects-self {
+    background-image: url();
+}
+    
+/* Class for the project items */
+
+.projects-item {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    border: 0 solid transparent;
+    border-radius: 2rem;
+}
+
+.projects-item * {
+    display: none;
+}
+
+.projects-item:hover * {
+    display: block;
+}

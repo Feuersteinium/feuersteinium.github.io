@@ -41,7 +41,8 @@
 /* Standard Heading*/
 h1, h2, h3, h4, h5, h6 {
     color: #272626;
-    font-family: 'nohemi';
+    font-family: 'inter';
+    font-weight: 900;
 }
 
 
@@ -88,6 +89,12 @@ body {
     flex-direction: column;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .box {
     border-radius: 5rem;
     border: 0.75rem solid #3C6E71;
@@ -105,16 +112,19 @@ code {
 }
 
 
-#full-layout {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 footer {
     margin-top: auto;
 }
 
 a {
     text-decoration: none;
+} 
+
+#imprint {
+    width: 80vw;
+    align-self: center;
+}
+
+#imprint h4 {
+    margin: 1rem 0;
 }
