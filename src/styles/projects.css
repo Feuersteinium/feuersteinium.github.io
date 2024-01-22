@@ -31,12 +31,28 @@
     background-color: transparent;
     border: 0 solid transparent;
     border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
 }
 
 .projects-item * {
     display: none;
+    font-family: raleway;
+    font-weight: 700;
+    margin-bottom: 2rem;
 }
 
 .projects-item:hover * {
     display: block;
+}
+
+
+.projects-center {
+    margin: 0 auto;
+}
+
+.projects-heading {
+    margin: 0 auto 1.5rem;
 }
