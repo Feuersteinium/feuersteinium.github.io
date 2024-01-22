@@ -12,16 +12,14 @@ img {
 }
 
 
-.blogarticle {
+.blog-article {
     width: 20vw;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 1.5rem;
-    border-color: var(--color-component);
-    background-color: var(--color-component);
+    height: 20vw;
+    border-radius: 2rem;
+    background-color: aliceblue;
 }
 
-.blogarticle p,.blogarticle a {
+.blog-article p,.blog-article a {
     color: green;
     text-decoration: none;
 }

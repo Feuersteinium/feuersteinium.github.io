@@ -19,7 +19,7 @@ const allPosts = await Astro.glob('../pages/blog/*.md');
 		<Header />
 		<h1>{pageTitle}</h1>
         <div id="blogarticles">
-			{allPosts.map((post) => <div class="blogarticle"><a href={post.url}><img src={post.frontmatter.image.url}><p>{post.frontmatter.title}</p><p class="blog-date">{post.frontmatter.pubDate}</p></a></div>)}
+			{allPosts.map((post) => <div class="blog-article"><a href={post.url}><img src={post.frontmatter.image.url}><p>{post.frontmatter.title}</p><p class="blog-date">{post.frontmatter.pubDate}</p></a></div>)}
         </div>
 	</body>
 </html>
