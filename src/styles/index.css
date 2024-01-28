@@ -1,8 +1,56 @@
 
 /*CSS for the index.astro file*/
 
-#one {
-    background-color: rgb(26, 39, 218);
-    width: 100%;
-    height: 30rem;
+#index-intro {
+    display: grid;
+    grid-template-rows: repeat(5, 10vw);
+    grid-template-columns: repeat(10, 10vw);
+    grid-auto-columns: 10vw;
+    grid-auto-rows: 10vw;
+    background: rgb(245,154,50);
+    background: radial-gradient(circle, rgba(245,154,50,0.6110819327731092) 0%, rgba(255,179,0,0.40940126050420167) 100%);
+}   
+
+
+#index-intro-1 {
+    grid-area: 2 / 2 / span 1 / span 2;
 }
+
+
+#index-intro-2 {
+    grid-area: 3 / 3 / span 1 / span 2;
+}
+
+
+#index-intro-3 {
+    grid-area: 4 / 2 / span 1 / span 3;
+}
+
+.index-intro-ibox {
+    display: flex;
+    grid-area: 5 / 2 / span 1 / span 8;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+.index-intro-ibox > div {   
+    width: 9vw;
+    height: 9vw;
+    background-color: white;
+    border-radius: 2rem;
+   
+}
+
+
+
+/*#index-intro-1::after {
+    content: '';
+    width: 4ch;
+    height: 0.3rem;
+    background-color: orange;
+    display: block;
+    box-shadow: 0 0 1rem orangered;
+    transform: translateX(5ch);
+}
+*/
