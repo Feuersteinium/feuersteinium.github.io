@@ -3,10 +3,10 @@
 
 #index-intro {
     display: grid;
-    grid-template-rows: repeat(5, 10vw);
-    grid-template-columns: repeat(10, 10vw);
-    grid-auto-columns: 10vw;
-    grid-auto-rows: 10vw;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
     background: rgb(245,154,50);
     background: radial-gradient(circle, rgba(245,154,50,0.6110819327731092) 0%, rgba(255,179,0,0.40940126050420167) 100%);
 }   
@@ -50,14 +50,3 @@
     height: 50%;
     filter: drop-shadow(2px 2px 2px gray);
 }
-
-/*#index-intro-1::after {
-    content: '';
-    width: 4ch;
-    height: 0.3rem;
-    background-color: orange;
-    display: block;
-    box-shadow: 0 0 1rem orangered;
-    transform: translateX(5ch);
-}
-*/

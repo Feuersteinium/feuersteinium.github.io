@@ -134,14 +134,15 @@ a {
 
 #index-others-container > div {
     width: 30vw;
+    min-width: 400px;
     aspect-ratio: 2 / 1;
     display: inline-block;
     border-radius: 1rem;
     border: #1C2321 solid 0.1px;
     flex-shrink: 0;
     display: grid;
-    grid-template-rows: repeat(3, 5vw);
-    grid-template-columns: repeat(6, 5vw);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 }
 
 
