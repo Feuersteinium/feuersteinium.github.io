@@ -28,7 +28,7 @@
 }
 
 #link-first {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 #link-tree p {
@@ -39,16 +39,6 @@
     margin: auto;
 }
 
-@media (max-width: 500px) {
-    #link-tree p {
-        font-size: 3rem;
-    }
-   
-}
-
-@media (min-width: 501px) {
-    #link-tree p {
-        font-size: 2rem;
-    }
-   
+#link-tree p {
+    font-size: 1.7rem;
 }
