@@ -39,10 +39,17 @@
     height: 9vw;
     background-color: white;
     border-radius: 2rem;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
+.index-intro-ibox svg {
+    color: black;
+    height: 50%;
+    filter: drop-shadow(2px 2px 2px gray);
+}
 
 /*#index-intro-1::after {
     content: '';
