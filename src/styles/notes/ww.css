@@ -12,8 +12,6 @@
 
 body {
     background-color: var(--color-bg);
-    width: 80vw;
-    margin: 0 auto;
 }
 
 #headline {
@@ -46,6 +44,16 @@ p {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    max-width: 80%;
+    min-width: 380px;
+    margin: 0 auto;
+}
+
+
+.notes-headlines {
+    color: var(--color-box);
+    font-size: 2rem;
+    text-align: center;
 }
 
 .notes-timeline {
@@ -78,15 +86,129 @@ p {
     z-index: 1;
 }
 
+
 .notes-timeline-txt {
-    grid-area: 1 / 1 / -1 / -1;
+    grid-area: 1 / 1 / -2 / -2;
     margin: 2rem;
     z-index: 0;
     font-weight: 500;
+    font-size: 1.5rem;
 }
 
 #txt-down {
     text-align: center;
     color: var(--color-box);
     margin: 2rem 0;
+}
+
+
+.nav-button {
+    background-color: azure;
+    border: azure solid 1rem;
+    color: var(--color-bg);
+    font-family: raleway;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+#notes-sourcesheet {
+    color: white;
+    max-width: 80%;
+    overflow: hidden;
+    margin: 2rem auto;
+}
+
+#notes-sourcesheet a {
+    color: white;
+    font-family: raleway;
+    font-size: 1.5rem;
+    max-width: 75ch;
+}
+
+
+#notes-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#steckbriefe {
+    margin: 3rem auto;
+}
+
+#steckbriefe img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+#steckbriefe p {
+    color: var(--color-box);
+    text-align: center;
+    margin: 1rem;
+    font-weight: 500;
+}
+
+#notes-steckbriefe {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#notes-steckbriefe p {
+    color: white;
+    max-width: 75ch;
+    margin: 0 auto;
+    font-size: 1.5;
+    font-weight: 500;
+}
+
+#notes-steckbriefe h2 {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+
+#notes-steckbriefe p:last-child {
+    margin-bottom: 4rem;
+}
+
+#notes-intro p {
+    color: var(--color-box);
+    font-size: 1.5;
+    font-weight: 500;
+    max-width: 75ch;
+    margin: 0 auto;
+}
+
+#notes-intro {
+    margin: 2rem auto;
+    width: 90%;
+}
+
+
+
+#notes-device-warning {
+    display: none;
+}
+
+
+
+@media (max-width: 350px) {
+    #notes-device-warning {
+        background-color: red;
+        display: block;
+    }
+    
+    #notes-device-warning h4 {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 400px) {
+    #notes-nav {
+        gap: 0.3rem;
+    }
 }
