@@ -50,3 +50,8 @@
     height: 50%;
     filter: drop-shadow(2px 2px 2px gray);
 }
+
+
+#index-intro, #index-others-container, #index-others-h, #index-others-txt {
+    display: none;
+}
