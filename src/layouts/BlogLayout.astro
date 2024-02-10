@@ -11,9 +11,19 @@ import Umami from '../components/umami.astro'
 </head>
 <body>
     <Header />
-    <h2>{frontmatter.title}</h2>
-    <p>Written by {frontmatter.author}</p>
-    <p>Published on {frontmatter.date}</p>
-    <slot />
+    <section>
+        <h2 id="blog-main-headline">{frontmatter.title}</h2>
+        <hr>
+        <img id="blog-title-img" src="https://unsplash.it/1920/1080">
+        <div class="blog-userinfo">
+            <p>Autor: {frontmatter.author}</p>
+            <p>Veröffentlicht am: {frontmatter.pubDate}</p>
+            <p>{frontmatter.status}</p>
+        </div>
+        <div class="blog-textbox">
+            <p id="blog-description">{frontmatter.description}</p>
+            <slot />
+        </div>  
+    </section>
     <Footer />
 </body>
