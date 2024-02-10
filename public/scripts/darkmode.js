@@ -14,7 +14,7 @@ function dbtn() {
    }
    if (mode === "false") {
    document.documentElement.style.setProperty("--mode-text", "")
-   document.documentElement.style.setProperty("--mode-c1", "#ffffff")
+   document.documentElement.style.setProperty("--mode-c1", "")
    document.documentElement.style.setProperty("--mode-c2", "")
    localStorage.setItem("mode", "true")
    }
