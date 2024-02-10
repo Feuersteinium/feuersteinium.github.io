@@ -4,6 +4,11 @@
     --color-component: #ffe9f5;
     --color-components: #C84192;    
     --color-component2: #9E2E71;
+
+    /*Colors for the default theme (Light)*/
+    --mode-text:;
+    --mode-c1:#9E2E71;
+    --mode-c2:;
 }
 
 
@@ -176,3 +181,9 @@ a {
     margin: 2rem 0 3rem;
 }
 
+.btn {
+    background-color: var(--mode-c1);
+    border:var(--mode-c1) solid 1rem;
+    border-radius: 1rem;
+    display: inline-block;
+}

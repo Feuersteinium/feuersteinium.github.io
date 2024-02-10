@@ -20,6 +20,7 @@ import Umami from "../components/umami.astro";
     />
     <title>{pageTitle}</title>
     <Umami />
+    <script is:inline src="/scripts/darkmode.js"></script>
   </head>
   <body>
     <Header />
@@ -104,6 +105,9 @@ import Umami from "../components/umami.astro";
       </div>
       <p id="index-others-txt">Aber mach dir gerne selbst ein Bild</p>
     </section>
+    <div class="btn" onclick="dbtn()">
+        <p>Switch Mode</p>
+    </div>
     <Footer />
   </body>
 </html>
