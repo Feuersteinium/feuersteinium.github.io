@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css'
-const pageTitle = "404 Page not Found"
+import '../styles/404.css'
 import Umami from '../components/umami.astro'
 ---
 
@@ -11,10 +11,21 @@ import Umami from '../components/umami.astro'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
+		<title>404</title>
 		<Umami />
 	</head>
 	<body>
-		<h1>{pageTitle}</h1>
+		<h1 id="http404">404</h1>
+		<p id="info404">The requested ressource could not be found. If you belive this to be an error make sure to <a href="https://github.com/Feuersteinium/feuersteinium.github.io/issues">open an issue on Github </a> or drop a message :D</p>
+		<section>
+			<h4>[Notice]</h4>
+			<ul>
+			<li><p>Keep in Mind: Seeing this page too often may be harmful for your neurons</p></li>
+			<li><p>You've been officially flooded with over 5.8 KB of useless Data ~ sincerely Web Server </p></li>
+			<li><p>This 404 page has a meaning beside of looking nice.</p></li>
+			<li><p>The perfect page to refer for academic purposes - Could technically be a source, but it's not!</p></li>
+			<li><p>Pulling out your Ethernet cable is no solution</p></li>
+			</ul>
+		</section>
 	</body>
 </html>
