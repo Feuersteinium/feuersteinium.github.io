@@ -16,10 +16,14 @@ import Umami from '../components/umami.astro'
 	</head>
 	<body>
 		<Header />
-		<h1>{pageTitle}</h1>
-		<p>Niklas Feuerstein</p>
-        <p>E-Mail: contact[at]feuerstein.dev <a href="/pgp">PGP</a></p>
-		
-
+		<div id="imprint">
+			<h1>Impressum</h1>
+			<h4>Kontakt</h4>
+			<p>E-Mail: contact[at]feuerstein.dev <a href="/pgp">PGP</a></p>
+			<h4>Datenschutz</h4>
+			<p>Diese Website ist auf Github Pages gehostet, weshalb hier auch die Datenschutzbestimmungen von Github gelten. Außerdem werden anonyme Analysedaten via Umami, einem Open Source Tool 
+				erhoben - Sie beinhalten jedoch keine Persönlichen Daten. Durch den Dark Mode Button wird im lokalen Speicher des Browsers eine Angabe des aktuellen Zustands der Einstellung gespeichert.</p>
+		</div> 
+		<Footer />
 	</body>
 </html>
