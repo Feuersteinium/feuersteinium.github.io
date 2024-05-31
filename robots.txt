@@ -4,6 +4,7 @@ User-agent: *
 Disallow: /fonts/
 Disallow: /impressum
 Disallow: /pgp.asc
+Disallow: /notes/
 
 
 
